@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K1NGP4UNG</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<center> <header class="top">
+  <h1>K1NG<span class="neon">P4UNG</span></h1><br>
+  <img src="cr.jpg" alt="" style="border-radius: 50%;" width="100px">
+</header></center>
+
+<section id="home" class="section">
+ <center><h2>UMKM Makanan Pedas 🔥</h2> </center> 
+  <center><p>Siap bikin nagih</p></center>
+</section>
+
+<section id="produk" class="section products">
+  <!-- PRODUK -->
+  <div class="product">
+    <img src="ayambakar.jpg">
+    <h3>Ayam Geprek</h3>
+    <p>Rp 15.000</p>
+    <button onclick="addToCart(1,'Ayam Geprek',15000)">Tambah</button>
+  </div>
+  <div class="product">
+    <img src="seblak.jpg">
+    <h3>Seblak</h3>
+    <p>Rp 12.000</p>
+    <button onclick="addToCart(2,'Seblak',12000)">Tambah</button>
+  </div>
+  <div class="product">
+    <img src="dimsum.jpg">
+    <h3>Dimsum</h3>
+    <p>Rp 25.000</p>
+    <button onclick="addToCart(3,'dimsum',25000)">Tambah</button>
+  </div>
+  <div class="product">
+    <img src="bakso.jpg">
+    <h3>Bakso</h3>
+    <p>Rp 14.000</p>
+    <button onclick="addToCart(4,'bakso',14000)">Tambah</button>
+  </div>
+  <div class="product">
+    <img src="sosisbakar.jpg">
+    <h3>Sosis Bakar</h3>
+    <p>Rp 10.000</p>
+    <button onclick="addToCart(5,'Sosis Bakar',10000)">Tambah</button>
+  </div>
+  <div class="product">
+    <img src="esteh.jpg">
+    <h3>Es Teh</h3>
+    <p>Rp 5.000</p>
+    <button onclick="addToCart(6,'Es Teh',5000)">Tambah</button>
+  </div>
+</section>
+
+<section id="keranjang" class="section">
+  <h2>Keranjang</h2>
+  <div id="cartItems"></div>
+  <h3>Total: <span id="cartTotal">Rp 0</span></h3>
+  <button onclick="clearCart()">Kosongkan Keranjang</button>
+</section>
+
+<section id="checkout" class="section">
+  <button class="checkout" onclick="checkoutWA()">Checkout via WhatsApp</button>
+</section>
+
+<nav class="bottom-nav">
+  <span onclick="scrollToSection('home')">Home</span>
+  <span onclick="scrollToSection('produk')">Produk</span>
+  <span onclick="scrollToSection('keranjang')">Keranjang</span>
+  <span onclick="scrollToSection('checkout')">Checkout</span>
+</nav>
+
+<script src="script.js"></script>
+</body>
+</html>
